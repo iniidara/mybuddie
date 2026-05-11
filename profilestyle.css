@@ -70,3 +70,118 @@ body{
     transform:scale(1.1);
     box-shadow:0 2px 8px rgba(0,0,0,0.3);
 }
+
+.cover-area{
+    width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.bg-image{
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+}
+
+.bg-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.bg-image:hover img{
+    transform: scale(1.05);
+}
+
+.profile-header{
+    display: flex;
+    align-items: flex-end;
+    padding: 0 30px 20px;
+    gap: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.profile-pic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: -90px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.profile-pic:hover{
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(64,93,155,0.25);
+}
+
+.profile-info{
+    flex: 1;
+    padding-bottom: 10px;
+}
+
+.profile-info h1{
+    font-size: 28px;
+    color: #1c1e21;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.profile-info p{
+    font-size: 14px;
+    color: #65676b;
+}
+
+.profile-nav{
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.nav-item{
+    display: block;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #65676b;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    color: #405d9b;
+    border-bottom-color: #e5e5e5;
+}
+
+.nav-item.active{
+    color: #405d9b;
+    border-bottom-color: #405d9b;
+}
+
+.profile-menu{
+    display: flex;
+}
+
+.content-1{
+    background-color: green;
+    min-height: 400px;
+    flex: 1;
+}
+
+.content-2{
+    background-color: grey;
+    min-height: 400px;
+    flex: 1;
+}
