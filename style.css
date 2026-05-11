@@ -134,3 +134,58 @@ footer{
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #bar {
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    #large-text {
+        font-size: 24px;
+    }
+
+    #signupbtn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #form-bg {
+        width: 90%;
+        max-width: 380px;
+        margin-top: 40px;
+        padding: 30px 20px;
+        border-radius: 12px;
+    }
+
+    .input-field {
+        height: 44px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    #submit {
+        height: 44px;
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #bar {
+        padding: 10px 15px;
+    }
+
+    #large-text {
+        font-size: 20px;
+    }
+
+    #form-bg {
+        width: 95%;
+        padding: 25px 15px;
+    }
+}
