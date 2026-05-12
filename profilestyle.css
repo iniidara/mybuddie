@@ -172,18 +172,147 @@ body{
 
 .profile-menu{
     display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+    background: #f0f2f5;
+    min-height: 500px;
 }
 
-.content-1{
-    background-color: green;
-    min-height: 400px;
-    flex: 1;
+.sidebar{
+    flex: 0 0 280px;
 }
 
-.content-2{
-    background-color: grey;
-    min-height: 400px;
+.friends-section{
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.friends-section h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #1c1e21;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.friends-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.friend-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.friend-card:hover{
+    background: #f0f2f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.friend-avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid #e5e5e5;
+    transition: border-color 0.2s ease;
+}
+
+.friend-card:hover .friend-avatar{
+    border-color: #405d9b;
+}
+
+.friend-name{
+    font-size: 13px;
+    font-weight: 500;
+    color: #1c1e21;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.posts-section{
     flex: 1;
+    min-height: 400px;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.post-placeholder{
+    background: #f7f8fa;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.post-placeholder textarea{
+    width: 100%;
+    min-height: 110px;
+    border: 1px solid #d8dade;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #1c1e21;
+    resize: vertical;
+    background: white;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-placeholder textarea:focus{
+    border-color: #405d9b;
+    box-shadow: 0 0 0 3px rgba(64,93,155,0.12);
+}
+
+.post-placeholder textarea::placeholder{
+    color: #7a7d85;
+}
+
+.post-button{
+    background-color: #405d9b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.post-button:hover{
+    background-color: #314b87;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(49,75,135,0.18);
+}
+
+.post-button:active{
+    transform: translateY(0);
+}
+
+textarea{
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 /* Mobile Responsiveness */
@@ -259,10 +388,18 @@ body{
 
     .profile-menu {
         flex-direction: column;
+        padding: 15px;
     }
 
-    .content-1,
-    .content-2 {
+    .sidebar {
+        flex: 0 0 auto;
+    }
+
+    .friends-section {
+        padding: 12px;
+    }
+
+    .posts-section {
         min-height: 300px;
     }
 }
