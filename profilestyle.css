@@ -387,7 +387,7 @@ textarea{
     }
 
     .profile-menu {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 15px;
     }
 
@@ -399,8 +399,31 @@ textarea{
         padding: 12px;
     }
 
+    .friends-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        align-items: start;
+    }
+
+    .friend-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .friend-avatar {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .friend-name {
+        font-size: 12px;
+    }
+
     .posts-section {
         min-height: 300px;
+        margin-bottom: 15px;
     }
 }
 
