@@ -141,7 +141,6 @@ body{
     color: #65676b;
 }
 
-
 .profile-nav{
     display: flex;
     border-bottom: 1px solid #e5e5e5;
@@ -383,16 +382,17 @@ textarea{
 
     #banner-text {
         width: 100%;
-        padding: 0 15px;
-        font-size: 20px;
+        padding: 0 12px;
+        font-size: 18px;
+        gap: 8px;
     }
 
     #search-box {
-        width: 200px;
+        width: 180px;
         height: 30px;
-        padding-left: 35px;
-        font-size: 13px;
-        background-size: 14px;
+        padding-left: 32px;
+        font-size: 12px;
+        background-size: 13px;
     }
 
     #banner-text img {
@@ -404,100 +404,152 @@ textarea{
         width: 95%;
         max-width: 900px;
         border-radius: 6px;
+        margin: 0 auto;
     }
 
     .bg-image {
-        height: 250px;
+        height: 220px;
     }
 
     .profile-header {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 0 20px 20px;
-        gap: 15px;
+        padding: 0 15px 15px;
+        gap: 10px;
     }
 
     .profile-pic {
-        width: 120px;
-        height: 120px;
-        margin-top: -60px;
+        width: 110px;
+        height: 110px;
+        margin-top: -55px;
         border-width: 4px;
     }
 
     .profile-info h1 {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 4px;
     }
 
     .profile-info p {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .profile-nav {
-        padding: 0 15px;
-        gap: 20px;
+        padding: 0 12px;
+        gap: 16px;
         overflow-x: auto;
         white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-item {
-        padding: 12px 0;
-        font-size: 14px;
+        padding: 10px 0;
+        font-size: 13px;
         flex-shrink: 0;
     }
 
     .profile-menu {
-        flex-direction: column-reverse;
-        padding: 15px;
+        flex-direction: column;
+        padding: 12px;
+        gap: 15px;
+        background: #f8f9fa;
     }
 
     .sidebar {
         flex: 0 0 auto;
+        order: 2;
     }
 
     .friends-section {
         padding: 12px;
+        border-radius: 10px;
+    }
+
+    .friends-section h2 {
+        font-size: 14px;
     }
 
     .friends-container {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-        align-items: start;
+        gap: 10px;
     }
 
     .friend-card {
-        width: 100%;
-        text-align: center;
+        padding: 10px;
     }
 
     .friend-avatar {
         width: 60px;
         height: 60px;
-        margin: 0 auto;
     }
 
     .friend-name {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .posts-section {
-        min-height: 300px;
-        margin-bottom: 15px;
+        order: 1;
+        min-height: auto;
+        padding: 12px;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .post-placeholder {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .post-placeholder textarea {
+        min-height: 80px;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .post-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .posts-bar {
+        padding: 8px;
+        background: white;
+    }
+
+    .post {
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .post h3 {
+        font-size: 13px;
+    }
+
+    .icon {
+        width: 60px;
     }
 }
 
 @media (max-width: 480px) {
+    #blue_bar {
+        height: 48px;
+    }
+
     #banner-text {
-        font-size: 18px;
-        padding: 0 10px;
+        font-size: 16px;
+        padding: 0 8px;
     }
 
     #search-box {
-        width: 150px;
+        width: 140px;
         height: 28px;
-        padding-left: 30px;
-        background-size: 12px;
+        padding-left: 28px;
+        font-size: 11px;
+        background-size: 11px;
     }
 
     #banner-text img {
@@ -506,35 +558,106 @@ textarea{
     }
 
     .cover-area {
-        width: 98%;
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
     }
 
     .bg-image {
-        height: 200px;
+        height: 180px;
     }
 
     .profile-header {
-        padding: 0 15px 15px;
+        padding: 0 12px 12px;
+        gap: 8px;
     }
 
     .profile-pic {
-        width: 100px;
-        height: 100px;
-        margin-top: -50px;
+        width: 90px;
+        height: 90px;
+        margin-top: -45px;
         border-width: 3px;
     }
 
     .profile-info h1 {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    .profile-info p {
+        font-size: 11px;
     }
 
     .profile-nav {
         padding: 0 10px;
-        gap: 15px;
+        gap: 12px;
     }
 
     .nav-item {
-        padding: 10px 0;
-        font-size: 13px;
+        padding: 8px 0;
+        font-size: 12px;
+    }
+
+    .profile-menu {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .friends-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .friend-card {
+        padding: 8px;
+    }
+
+    .friend-avatar {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 4px;
+    }
+
+    .friend-name {
+        font-size: 10px;
+    }
+
+    .posts-section {
+        padding: 10px;
+    }
+
+    .post-placeholder {
+        padding: 10px;
+    }
+
+    .post-placeholder textarea {
+        min-height: 70px;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .post-button {
+        padding: 7px 14px;
+        font-size: 12px;
+    }
+
+    .post {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+
+    .post h3 {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 50px;
+        margin-right: 2px;
     }
 }

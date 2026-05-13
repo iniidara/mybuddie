@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline | MyBuddie</title>
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="profilestyle.css">
+</head>
+<body>
+    <header id="blue_bar">
+        <div id="banner-text">
+            <span class="brand-name">MyBuddie</span>
+            <input type="search" id="search-box" placeholder="Find assignments, subjects..." aria-label="Search MyBuddie">
+            <img src="images/selfie.jpg" alt="Profile avatar">
+        </div>
+    </header>
+
+    <main class="timeline-wrapper">
+        <!-- Sidebar -->
+        <aside class="trending-sidebar">
+            <div class="trending-card">
+                <h3>🔥 Trending Subjects</h3>
+                <div class="trending-item">
+                    <div class="trending-item-subject">BIOLOGY</div>
+                    <div class="trending-item-title">Cell Structure & Function</div>
+                    <div class="trending-item-count">847 answers</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-item-subject">MATHEMATICS</div>
+                    <div class="trending-item-title">Calculus II - Integrals</div>
+                    <div class="trending-item-count">1,203 answers</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-item-subject">HISTORY</div>
+                    <div class="trending-item-title">World War II Events</div>
+                    <div class="trending-item-count">562 answers</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-item-subject">CHEMISTRY</div>
+                    <div class="trending-item-title">Organic Reactions</div>
+                    <div class="trending-item-count">923 answers</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-item-subject">ENGLISH</div>
+                    <div class="trending-item-title">Shakespeare Analysis</div>
+                    <div class="trending-item-count">675 answers</div>
+                </div>
+            </div>
+
+            <div class="trending-card">
+                <h3>💡 Quick Tips</h3>
+                <p style="font-size: 13px; color: #65676b; line-height: 1.6;">
+                    Explain your reasoning, not just answers. Help others understand the "why" behind solutions. Add citations and reference materials for credibility.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Feed -->
+        <div class="feed-wrapper">
+            <!-- Share Box -->
+            <div class="share-box">
+                <div class="share-box-header">
+                    <img src="images/selfie.jpg" alt="Your avatar" class="share-box-avatar">
+                    <div class="share-box-info">
+                        <h4>Share Your Answer</h4>
+                    </div>
+                </div>
+                <select class="subject-select">
+                    <option value="">Select Subject...</option>
+                    <option value="math">📐 Mathematics</option>
+                    <option value="biology">🧬 Biology</option>
+                    <option value="chemistry">⚗️ Chemistry</option>
+                    <option value="history">📚 History</option>
+                    <option value="english">✍️ English</option>
+                    <option value="physics">🔬 Physics</option>
+                    <option value="economics">💰 Economics</option>
+                </select>
+                <textarea placeholder="Share your answer or explanation here... Be detailed and helpful!"></textarea>
+                <div class="share-box-actions">
+                    <button class="share-box-button">Post Answer</button>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <div class="post">
+                <div>
+                    <img class="icon" src="images/user1.jpg" alt="Sarah Johnson avatar">
+                </div>
+                <div>
+                    <h3>Sarah Johnson <span class="post-badge">📐 Mathematics</span></h3>
+                    <p><strong>Question: Solve the integral of x²sin(x)dx</strong></p>
+                    <p>Use integration by parts twice. Let u = x², dv = sin(x)dx. First iteration gives you the reduction formula. The final answer is -x²cos(x) + 2xsin(x) + 2cos(x) + C. I've verified this by differentiation!</p>
+                    <p class="post-stats">👍 342 helpful • 💬 28 comments • ⭐ 15 saved</p>
+                    <div class="post-actions"><a href="#">Helpful</a> <a href="#">Comment</a> <a href="#">Save</a> <span>2 hours ago</span></div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div>
+                    <img class="icon" src="images/user1.jpg" alt="Marcus Chen avatar">
+                </div>
+                <div>
+                    <h3>Marcus Chen <span class="post-badge">🧬 Biology</span></h3>
+                    <p><strong>Essay: The Impact of Mitochondrial Function on Cellular Energy Production</strong></p>
+                    <p>Mitochondria produce ATP through oxidative phosphorylation in the cristae. The inner membrane has a large surface area which increases efficiency. Cells with high energy demands (muscle, nerve) contain more mitochondria. This is why athletes have enhanced mitochondrial density!</p>
+                    <p class="post-stats">👍 289 helpful • 💬 45 comments • ⭐ 67 saved</p>
+                    <div class="post-actions"><a href="#">Helpful</a> <a href="#">Comment</a> <a href="#">Save</a> <span>4 hours ago</span></div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div>
+                    <img class="icon" src="images/user1.jpg" alt="Emma Rodriguez avatar">
+                </div>
+                <div>
+                    <h3>Emma Rodriguez <span class="post-badge">✍️ English</span></h3>
+                    <p><strong>Literary Analysis: Symbolism in The Great Gatsby</strong></p>
+                    <p>The green light represents Gatsby's dreams and the unreachable American Dream. The eyes of Dr. T.J. Eckleburg symbolize God's judgment over the morality of the characters. Fitzgerald's use of color symbolism throughout reinforces themes of wealth, corruption, and desire.</p>
+                    <p class="post-stats">👍 156 helpful • 💬 32 comments • ⭐ 89 saved</p>
+                    <div class="post-actions"><a href="#">Helpful</a> <a href="#">Comment</a> <a href="#">Save</a> <span>6 hours ago</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

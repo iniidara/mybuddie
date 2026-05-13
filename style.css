@@ -163,54 +163,107 @@ footer{
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     #bar {
-        padding: 15px 20px;
+        padding: 12px 15px;
         height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     #large-text {
-        font-size: 24px;
+        font-size: 22px;
+        flex-basis: 100%;
     }
 
     #signupbtn {
         padding: 8px 16px;
-        font-size: 14px;
+        font-size: 13px;
+        align-self: flex-end;
     }
 
     #form-bg {
         width: 90%;
         max-width: 380px;
-        margin-top: 40px;
-        padding: 30px 20px;
+        margin-top: 30px;
+        padding: 25px 18px;
         border-radius: 12px;
+    }
+
+    #form-bg h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .input-field {
         height: 44px;
-        font-size: 16px; /* Prevents zoom on iOS */
+        font-size: 16px;
+        padding: 0 12px;
+        margin-bottom: 16px;
+    }
+
+    .field-label {
+        font-size: 13px;
+        margin-bottom: 6px;
     }
 
     #submit {
         height: 44px;
-        font-size: 16px;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .form-note {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+
+    .form-note a {
+        font-size: 12px;
     }
 
     footer {
-        margin-top: 30px;
-        font-size: 12px;
+        margin-top: 25px;
+        font-size: 11px;
     }
 }
 
 @media (max-width: 480px) {
     #bar {
-        padding: 10px 15px;
+        padding: 10px 12px;
+        gap: 12px;
     }
 
     #large-text {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    #signupbtn {
+        padding: 7px 14px;
+        font-size: 12px;
     }
 
     #form-bg {
         width: 95%;
-        padding: 25px 15px;
+        padding: 20px 14px;
+        margin-top: 20px;
+    }
+
+    #form-bg h1 {
+        font-size: 16px;
+    }
+
+    .input-field {
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    #submit {
+        height: 40px;
+        font-size: 13px;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 10px;
     }
 }
