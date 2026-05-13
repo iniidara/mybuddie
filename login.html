@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>MyBuddie| Login</title>
+        <title>MyBuddie | Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div id="bar">
-
+        <header id="bar">
             <div id="large-text">MyBuddie</div>
-            <div id="signupbtn">Signup</div>
-
-        </div>
+            <a id="signupbtn" href="signup.html">Sign up</a>
+        </header>
         
-        <div id="form-bg">
-            Login To MyBuddie <br><br>
+        <main id="form-bg">
+            <h1>Login to MyBuddie</h1>
 
-            <input type="email" class="input-field" placeholder="Email" autocomplete="on">
-            <input type="password" class="input-field" placeholder="Password" autocomplete="on">
-            <button type="submit" id="submit" value="Login">Log in</button>
-            <br><br><br>
-        </div>
+            <input type="email" class="input-field" placeholder="Email" autocomplete="email">
+            <input type="password" class="input-field" placeholder="Password" autocomplete="current-password">
+            <button type="submit" id="submit">Log in</button>
+            <p class="form-note">Don't have an account? <a href="signup.html">Create one</a>.</p>
+        </main>
 
-         <footer>&copy;MyBuddie App</footer>
+         <footer>&copy; MyBuddie App</footer>
     </body>
 </html>
 

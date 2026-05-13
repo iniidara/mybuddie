@@ -34,6 +34,11 @@ body{
 /* Signup Button */
 
 #signupbtn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
     background: linear-gradient(135deg,#42b72a,#2c8d1a);
     padding:10px 22px;
     border-radius:30px;
@@ -45,6 +50,26 @@ body{
 #signupbtn:hover{
     transform:scale(1.1);
     box-shadow:0 6px 20px rgba(0,0,0,0.3);
+}
+
+.form-note{
+    margin-top: 18px;
+    font-size: 14px;
+    color: #444;
+}
+
+.form-note a{
+    color: #3c5a99;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.field-label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
 }
 
 /* Form Card */

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,25 +7,28 @@
     <link rel="stylesheet" href="profilestyle.css">
 </head>
 <body>
-    <div id="blue_bar">
+    <header id="blue_bar">
         <div id="banner-text">
-            MyBuddie &nbsp &nbsp<input type="text" id="search-box" placeholder="I'm looking for...">
-            <img src="images/selfie.jpg" alt="">
+            <span class="brand-name">MyBuddie</span>
+            <input type="search" id="search-box" placeholder="I'm looking for..." aria-label="Search MyBuddie">
+            <img src="images/selfie.jpg" alt="Profile avatar">
         </div>
-    </div>
+    </header>
 
-    <div class="cover-area">
-        <div class="bg-image">
-            <img src="images/mountain.jpg" alt="cover">
-        </div>
-        <div class="profile-header">
-            <img class="profile-pic" src="images/selfie.jpg" alt="profile">
+    <main class="cover-area">
+        <section class="bg-image">
+            <img src="images/mountain.jpg" alt="Profile cover image">
+        </section>
+
+        <section class="profile-header">
+            <img class="profile-pic" src="images/selfie.jpg" alt="Mary Banda profile picture">
             <div class="profile-info">
                 <h1>Mary Banda</h1>
                 <p>Having Fun</p>
             </div>
-        </div>
-        <nav class="profile-nav">
+        </section>
+
+        <nav class="profile-nav" aria-label="Profile navigation">
             <a href="#" class="nav-item active">Timeline</a>
             <a href="#" class="nav-item">About</a>
             <a href="#" class="nav-item">Photos</a>
@@ -38,31 +42,63 @@
                     <h2>Friends</h2>
                     <div class="friends-container">
                         <div class="friend-card">
-                            <img class="friend-avatar" src="images/user1.jpg" alt="John Doe">
+                            <img class="friend-avatar" src="images/user1.jpg" alt="John Doe avatar">
                             <p class="friend-name">John Doe</p>
                         </div>
-
                         <div class="friend-card">
-                            <img class="friend-avatar" src="images/user1.jpg" alt="John Doe">
-                            <p class="friend-name">John Doe</p>
+                            <img class="friend-avatar" src="images/user1.jpg" alt="Jane Smith avatar">
+                            <p class="friend-name">Jane Smith</p>
                         </div>
-
                         <div class="friend-card">
-                            <img class="friend-avatar" src="images/user1.jpg" alt="John Doe">
-                            <p class="friend-name">John Doe</p>
+                            <img class="friend-avatar" src="images/user1.jpg" alt="Alex Lee avatar">
+                            <p class="friend-name">Alex Lee</p>
                         </div>
                     </div>
                 </div>
             </aside>
-            <div class="posts-section">
 
+            <section class="posts-section">
                 <div class="post-placeholder">
-                    <textarea placeholder="What I'm Offering The World"></textarea>
+                    <textarea placeholder="What I'm offering the world"></textarea>
                     <button type="submit" class="post-button">Post</button>
-                </div>
+                </div
 
-            </div>
+                <div class="posts-bar">
+                    <div class="post">
+                        <div>
+                            <img class="icon" src="images/user1.jpg" alt="Johnny Doehanon avatar">
+                        </div>
+                        <div>
+                            <h3>Johnny Doehanon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus nisl risus, vitae pellentesque tortor consequat vitae.</p>
+                            <div class="post-actions"><a href="#">Like</a> <a href="#">Comment</a> <span>April 23, 2020</span></div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div>
+                            <img class="icon" src="images/user1.jpg" alt="Sam Rivera avatar">
+                        </div>
+                        <div>
+                            <h3>Sam Rivera</h3>
+                            <p>Quisque suscipit orci nec libero fringilla, in suscipit velit feugiat. Sed euismod lacus vel mauris fringilla, nec commodo orci ullamcorper.</p>
+                            <div class="post-actions"><a href="#">Like</a> <a href="#">Comment</a> <span>March 15, 2020</span></div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <div>
+                            <img class="icon" src="images/user1.jpg" alt="Ava Thompson avatar">
+                        </div>
+                        <div>
+                            <h3>Ava Thompson</h3>
+                            <p>Praesent sit amet libero sed ipsum cursus vehicula. Phasellus in lectus quam. Praesent aliquet nisi eget est viverra, nec venenatis nisl fermentum.</p>
+                            <div class="post-actions"><a href="#">Like</a> <a href="#">Comment</a> <span>January 10, 2020</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
+    </main>
 </body>
 </html>
